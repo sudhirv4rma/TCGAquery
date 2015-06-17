@@ -1,0 +1,10 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+library.data.R
+test.tcga.R
+Test-cases
+Test-dir
+TCGA.data.file.format.txt
+TCGA.data.types.txt
+TCGA.diseases.txt
+TCGA-Assembler

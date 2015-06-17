@@ -1,0 +1,44 @@
+Center Code	Center Type	Display Name	Short Name	Center	TCGA Platform Code	Platform Alias	Platform Name
+01	CGCC	Broad Institute of MIT and Harvard	BI	broad.mit.edu	ABI	ABI	Applied Biosystems Sequence data
+09	GSC	Washington University School of Medicine	WUSM	genome.wustl.edu	ABI	ABI	Applied Biosystems Sequence data
+10	GSC	Baylor College of Medicine	BCM	hgsc.bcm.edu	ABI	ABI	Applied Biosystems Sequence data
+07	CGCC	University of North Carolina	UNC	unc.edu	AgilentG4502A_07_1	AgilentG4502A_07	Agilent 244K Custom Gene Expression G4502A-07-1
+07	CGCC	University of North Carolina	UNC	unc.edu	AgilentG4502A_07_2	AgilentG4502A_07	Agilent 244K Custom Gene Expression G4502A-07-2
+07	CGCC	University of North Carolina	UNC	unc.edu	AgilentG4502A_07_3	AgilentG4502A_07	Agilent 244K Custom Gene Expression G4502A-07-3
+04	CGCC	Memorial Sloan-Kettering Cancer Center	MSKCC	mskcc.org	CGH-1x1M_G4447A	CGH-1x1M_G4447A	Agilent SurePrint G3 Human CGH Microarray Kit 1x1M
+01	CGCC	Broad Institute of MIT and Harvard	BI	broad.mit.edu	Genome_Wide_SNP_6	Genome_Wide_SNP_6	Affymetrix Genome-Wide Human SNP Array 6.0
+09	GSC	Washington University School of Medicine	WUSM	genome.wustl.edu	Genome_Wide_SNP_6	Genome_Wide_SNP_6	Affymetrix Genome-Wide Human SNP Array 6.0
+07	CGCC	University of North Carolina	UNC	unc.edu	H-miRNA_8x15K	H-miRNA_8x15K	Agilent 8 x 15K Human miRNA-specific microarray
+07	CGCC	University of North Carolina	UNC	unc.edu	H-miRNA_8x15Kv2	H-miRNA_8x15K	Agilent Human miRNA Microarray Rel12.0
+04	CGCC	Memorial Sloan-Kettering Cancer Center	MSKCC	mskcc.org	HG-CGH-244A	HG-CGH-244A	Agilent Human Genome CGH Microarray 244A
+02	CGCC	Harvard Medical School	HMS	hms.harvard.edu	HG-CGH-244A	HG-CGH-244A	Agilent Human Genome CGH Microarray 244A
+02	CGCC	Harvard Medical School	HMS	hms.harvard.edu	HG-CGH-415K_G4124A	HG-CGH-415K_G4124A	Agilent Human Genome CGH Custom Microarray 2x415K
+09	GSC	Washington University School of Medicine	WUSM	genome.wustl.edu	HG-U133_Plus_2	HG-U133_Plus_2	Affymetrix Human Genome U133 Plus 2.0 Array
+01	CGCC	Broad Institute of MIT and Harvard	BI	broad.mit.edu	HT_HG-U133A	HT_HG-U133A	Affymetrix HT Human Genome U133 Array Plate Set
+03	CGCC	Lawrence Berkeley National Laboratory	LBL	lbl.gov	HuEx-1_0-st-v2	HuEx-1_0-st-v2	Affymetrix Human Exon 1.0 ST Array
+06	CGCC	HudsonAlpha Institute for Biotechnology	HAIB	hudsonalpha.org	Human1MDuo	Human1MDuo	Illumina Human1M-Duo BeadChip
+06	CGCC	HudsonAlpha Institute for Biotechnology	HAIB	hudsonalpha.org	HumanHap550	HumanHap550	Illumina 550K Infinium HumanHap550 SNP Chip
+05	CGCC	Johns Hopkins / University of Southern California	JHU_USC	jhu-usc.edu	HumanMethylation27	HumanMethylation27	Illumina Infinium Human DNA Methylation 27
+05	CGCC	Johns Hopkins / University of Southern California	JHU_USC	jhu-usc.edu	HumanMethylation450	HumanMethylation450	Illumina Infinium Human DNA Methylation 450
+05	CGCC	Johns Hopkins / University of Southern California	JHU_USC	jhu-usc.edu	IlluminaDNAMethylation_OMA002_CPI	IlluminaDNAMethylation	Illumina DNA Methylation OMA002 Cancer Panel I
+05	CGCC	Johns Hopkins / University of Southern California	JHU_USC	jhu-usc.edu	IlluminaDNAMethylation_OMA003_CPI	IlluminaDNAMethylation	Illumina DNA Methylation OMA003 Cancer Panel I
+09	GSC	Washington University School of Medicine	WUSM	genome.wustl.edu	IlluminaGA_DNASeq	Mutation Calling	Illumina Genome Analyzer DNA Sequencing
+01	CGCC	Broad Institute of MIT and Harvard	BI	broad.mit.edu	IlluminaGA_DNASeq	Mutation Calling	Illumina Genome Analyzer DNA Sequencing
+10	GSC	Baylor College of Medicine	BCM	hgsc.bcm.edu	IlluminaGA_DNASeq	Mutation Calling	Illumina Genome Analyzer DNA Sequencing
+18	GDAC	"University of California, Santa Cruz"	UCSC	ucsc.edu	IlluminaGA_DNASeq	Mutation Calling	Illumina Genome Analyzer DNA Sequencing
+07	CGCC	University of North Carolina	UNC	unc.edu	IlluminaGA_DNASeq	Mutation Calling	Illumina Genome Analyzer DNA Sequencing
+13	CGCC	Canada's Michael Smith Genome Sciences Centre	BCGSC	bcgsc.ca	IlluminaGA_RNASeq	IlluminaGA_RNASeq	Illumina Genome Analyzer RNA Sequencing
+07	CGCC	University of North Carolina	UNC	unc.edu	IlluminaGA_RNASeqV2	IlluminaGA_RNASeqV2	Illumina Genome Analyzer RNA Sequencing Version 2 analysis
+02	CGCC	Harvard Medical School	HMS	hms.harvard.edu	IlluminaGA_mRNA_DGE	IlluminaGA_mRNA_DGE	Illumina Genome Analyzer mRNA Digital Gene Expression
+13	CGCC	Canada's Michael Smith Genome Sciences Centre	BCGSC	bcgsc.ca	IlluminaGA_miRNASeq	IlluminaGA_miRNASeq	Illumina Genome Analyzer miRNA Sequencing
+02	CGCC	Harvard Medical School	HMS	hms.harvard.edu	IlluminaHiSeq_DNASeqC	IlluminaHiSeq_DNASeqC	Illumina HiSeq for Copy Number Variation
+07	CGCC	University of North Carolina	UNC	unc.edu	IlluminaHiSeq_RNASeq	IlluminaHiSeq_RNASeq	Illumina HiSeq 2000 RNA Sequencing
+07	CGCC	University of North Carolina	UNC	unc.edu	IlluminaHiSeq_RNASeqV2	IlluminaHiSeq_RNASeqV2	Illumina HiSeq 2000 RNA Sequencing Version 2 analysis
+07	CGCC	University of North Carolina	UNC	unc.edu	IlluminaHiSeq_TotalRNASeqV2	IlluminaHiSeq_TotalRNASeqV2	Illumina HiSeq 2000 Total RNA Sequencing Version 2 analysis
+05	CGCC	Johns Hopkins / University of Southern California	JHU_USC	jhu-usc.edu	IlluminaHiSeq_WGBSeq	IlluminaHiSeq_WGBSeq	Illumina HiSeq 2000 Bisulfite-converted DNA Sequencing
+13	CGCC	Canada's Michael Smith Genome Sciences Centre	BCGSC	bcgsc.ca	IlluminaHiSeq_miRNASeq	IlluminaHiSeq_miRNASeq	Illumina HiSeq 2000 miRNA Sequencing
+19	GDAC	MD Anderson	MDA	mdanderson.org	MDA_RPPA_Core	MDA_RPPA_Core	M.D. Anderson Reverse Phase Protein Array Core
+18	GDAC	"University of California, Santa Cruz"	UCSC	ucsc.edu	SOLiD_DNASeq	Mutation Calling	ABI SOLiD DNA System Sequencing
+01	CGCC	Broad Institute of MIT and Harvard	BI	broad.mit.edu	SOLiD_DNASeq	Mutation Calling	ABI SOLiD DNA System Sequencing
+10	GSC	Baylor College of Medicine	BCM	hgsc.bcm.edu	SOLiD_DNASeq	Mutation Calling	ABI SOLiD DNA System Sequencing
+23	CGCC	NCH BCR	NCH	nationwidechildrens.org	microsat_i	microsat_i	Microsatellite Instability Analysis

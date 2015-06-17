@@ -1,0 +1,63 @@
+#Specifies format of output files from TCGA analyses. The first column							
+#gives the name of the analysis protocol the second column specifies							
+#the format and the third column gives the number of leading lines to skip.							
+#The terms that appear in the beginning are the terms used in the format specification							
+>terms							
+ignore	Ignore column						
+probe	Probe ID						
+gene	Gene name						
+entrez	Entrez ID						
+exon	Exon of gene						
+chromosome1	Chromosome specified with a leading 'chr', e.g. chr1, chrX						
+chromosome2	Chromosome specified without a leading 'chr', e.g. 1, X						
+start	Start of genomic location						
+stop	End of genomic location						
+location	Genomic location (unspecified whether it is start, stop or some other location)						
+strand	Chromosome strand (Problem if any of the split characters are -)						
+raw_counts	Raw counts of reads mapping to the feature						
+median_length_normalized	Raw counts normalized by median gene length						
+scaled_estimate	Scaled estimate						
+transcript_id	Transcript id						
+isoform_id	Transcript isoform id						
+RPKM	Reads per kilobase (of gene length) per million (reads). Measure of gene expression in RNA seq experiments						
+beta	Beta value for methylation data (0 is unmethylated, 1 is methylated)						
+signal	Signal from array						
+num_probes	Number of probes within segment						
+mean_copy	Average copy number						
+sample_name	Name of the sample						
+>formats							
+Data type	Format	Skip	Col classes	Combine type	Cbind using	Data col	Annot cols
+bcgsc.ca:gene_expression:IlluminaHiSeq_RNASeq:01	gene|entrez|ignore\traw_counts\tmedian_length_normalized\tRPKM	0	character,integer,numeric,numeric,numeric	cbind	entrez	5	1,2
+bcgsc.ca:exon_expression:IlluminaHiSeq_RNASeq:01	chromosome1:start-stop:strand\traw_counts\tmedian_length_normalized\tRPKM	0	character,integer,integer,character,numeric,numeric,numeric	cbind	col1	7	1,2,3,4
+bcgsc.ca:splice_junction_expression:IlluminaHiSeq_RNASeq:01	chromosome1:location:strand,chromosome1:location:strand\traw_counts	0	character,integer,character,character,integer,character,numeric	cbind	col1	7	1,2,3,4,5,6
+jhu-usc.edu:within_bioassay_data_set_function:HumanMethylation27:01	probe\tbeta\tgene\tchromosome2\tlocation	1	character,numeric,character,character,integer	cbind	probe	2	1,3,4,5
+jhu-usc.edu:within_bioassay_data_set_function:HumanMethylation450:01	probe\tbeta\tgene\tchromosome2\tlocation	1	character,numeric,character,character,integer	cbind	probe	2	1,3,4,5
+unc.edu:exon_quantification:IlluminaHiSeq_RNASeqV2:3	chromosome1:start-stop:strand\traw_counts\tmedian_length_normalized\tRPKM	0	character,integer,integer,character,numeric,numeric,numeric	cbind	col1	7	1,2,3,4
+unc.edu:RSEM_genes:IlluminaHiSeq_RNASeqV2:3	gene|entrez\traw_counts\tscaled_estimate\ttranscript_id	0	character,integer,numeric,numeric,character	cbind	entrez	4	1,2,5
+unc.edu:RSEM_isoforms:IlluminaHiSeq_RNASeqV2:3	isoform_id\traw_counts\tscaled_estimate	0	character,numeric,numeric	cbind	isoform_id	3	1
+unc.edu:junction_quantification:IlluminaHiSeq_RNASeqV2:3	chromosome1:location:strand,chromosome1:location:strand\traw_counts	0	character,integer,character,character,integer,character,numeric	cbind	col1	7	1,2,3,4,5,6
+unc.edu:RSEM_genes_normalized:IlluminaHiSeq_RNASeqV2:3	gene|entrez\tmedian_length_normalized	0	character,integer,numeric	cbind	entrez	3	1,2
+unc.edu:RSEM_isoforms_normalized:IlluminaHiSeq_RNASeqV2:3	isoform_id\tmedian_length_normalized	0	character,numeric	cbind	isoform_id	2	1
+broad.mit.edu:gene_rma:HT_HG-U133A:01	gene\tsignal	1	character,numeric	cbind	gene	2	1
+unc.edu:unc_lowess_normalization_gene_level:AgilentG4502A_07_1:01	gene\tsignal	1	character,numeric	cbind	gene	2	1
+unc.edu:unc_lowess_normalization_gene_level:AgilentG4502A_07_2:01	gene\tsignal	1	character,numeric	cbind	gene	2	1
+unc.edu:unc_lowess_normalization_gene_level:AgilentG4502A_07_3:01	gene\tsignal	1	character,numeric	cbind	gene	2	1
+unc.edu:exon_expression:IlluminaHiSeq_RNASeq:01	chromosome1:start-stop:strand\traw_counts\tmedian_length_normalized\tRPKM	0	character,integer,integer,character,numeric,numeric,numeric	cbind	col1	7	1,2,3,4
+unc.edu:gene_expression:IlluminaHiSeq_RNASeq:01	gene|entrez|ignore\traw_counts\tmedian_length_normalized\tRPKM	0	character,integer,numeric,numeric,numeric	cbind	entrez	5	1,2
+unc.edu:splice_junction_expression:IlluminaHiSeq_RNASeq:01	chromosome1:location:strand,chromosome1:location:strand\traw_counts	0	character,integer,character,character,integer,character,numeric	cbind	col1	7	1,2,3,4,5,6
+unc.edu:exon_quantification:IlluminaHiSeq_RNASeqV2:2	chromosome1:start-stop:strand\traw_counts\tmedian_length_normalized\tRPKM	0	character,integer,integer,character,numeric,numeric,numeric	cbind	col1	7	1,2,3,4
+unc.edu:junction_quantification:IlluminaHiSeq_RNASeqV2:2	chromosome1:location:strand,chromosome1:location:strand\traw_counts	0	character,integer,character,character,integer,character,numeric	cbind	col1	7	1,2,3,4,5,6
+unc.edu:RSEM_genes:IlluminaHiSeq_RNASeqV2:2	gene|entrez\traw_counts\tscaled_estimate\ttranscript_id	0	character,integer,numeric,numeric,character	cbind	entrez	4	1,2,5
+unc.edu:RSEM_genes_normalized:IlluminaHiSeq_RNASeqV2:2	gene|entrez\tmedian_length_normalized	0	character,integer,numeric	cbind	entrez	3	1,2
+unc.edu:RSEM_isoforms:IlluminaHiSeq_RNASeqV2:2	isoform_id\traw_counts\tscaled_estimate	0	character,numeric,numeric	cbind	isoform_id	3	1
+unc.edu:RSEM_isoforms_normalized:IlluminaHiSeq_RNASeqV2:2	isoform_id\tmedian_length_normalized	0	character,numeric	cbind	isoform_id	2	1
+unc.edu:exon_quantification:IlluminaGA_RNASeqV2:3	chromosome1:start-stop:strand\traw_counts\tmedian_length_normalized\tRPKM	0	character,integer,integer,character,numeric,numeric,numeric	cbind	col1	7	1,2,3,4
+unc.edu:junction_quantification:IlluminaGA_RNASeqV2:3	chromosome1:location:strand,chromosome1:location:strand\traw_counts	0	character,integer,character,character,integer,character,numeric	cbind	col1	7	1,2,3,4,5,6
+unc.edu:RSEM_genes:IlluminaGA_RNASeqV2:3	gene|entrez\traw_counts\tscaled_estimate\ttranscript_id	0	character,integer,numeric,numeric,character	cbind	entrez	4	1,2,5
+unc.edu:RSEM_genes_normalized:IlluminaGA_RNASeqV2:3	gene|entrez\tmedian_length_normalized	0	character,integer,numeric	cbind	entrez	3	1,2
+unc.edu:RSEM_isoforms:IlluminaGA_RNASeqV2:3	isoform_id\traw_counts\tscaled_estimate	0	character,numeric,numeric	cbind	isoform_id	3	1
+unc.edu:RSEM_isoforms_normalized:IlluminaGA_RNASeqV2:3	isoform_id\tmedian_length_normalized	0	character,numeric	cbind	isoform_id	2	1
+broad.mit.edu:segmented_scna_hg18:Genome_Wide_SNP_6:01	sample_name\tchromosome2\tstart\tstop\tnum_probes\tmean_copy	0	character,character,integer,integer,integer,numeric	rbind			
+broad.mit.edu:segmented_scna_hg19:Genome_Wide_SNP_6:01	sample_name\tchromosome2\tstart\tstop\tnum_probes\tmean_copy	0	character,character,integer,integer,integer,numeric	rbind			
+broad.mit.edu:segmented_scna_minus_germline_cnv_hg18:Genome_Wide_SNP_6:01	sample_name\tchromosome2\tstart\tstop\tnum_probes\tmean_copy	0	character,character,integer,integer,integer,numeric	rbind			
+broad.mit.edu:segmented_scna_minus_germline_cnv_hg19:Genome_Wide_SNP_6:01	sample_name\tchromosome2\tstart\tstop\tnum_probes\tmean_copy	0	character,character,integer,integer,integer,numeric	rbind			
